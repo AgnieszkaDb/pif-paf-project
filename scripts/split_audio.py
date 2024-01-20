@@ -35,7 +35,7 @@ def split_audio(audio_array):
     return peaks
 
 
-def save_audio(file_path, peaks, j, output_folder='audio_splitted/'):
+def save_audio(file_path, peaks, j, output_folder='audio_split/'):
     audio = AudioSegment.from_file(file_path, format="aac")
     time_before = 40_000
     time_after = 60_000
